@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <title>Reserva de Seients al Cinema</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="contenidor">
+        <h1>Reserva de Seients al Cinema</h1>
+
+        <label for="pelicula">Escull la pel·lícula:</label>
+        <select id="pelicula">
+            <option value="10">Pel·lícula 1 (10 USD)</option>
+            <option value="12">Pel·lícula 2 (12 USD)</option>
+            <option value="8">Pel·lícula 3 (8 USD)</option>
+        </select>
+
+        <div class="cinema-seients">
+            <!-- Representació visual dels seients -->
+            <div class="fila">
+                <div class="seient"></div>
+                <div class="seient"></div>
+                <div class="seient ocupat"></div>
+                <div class="seient"></div>
+                <div class="seient"></div>
+            </div>
+            <div class="fila">
+                <div class="seient"></div>
+                <div class="seient ocupat"></div>
+                <div class="seient"></div>
+                <div class="seient"></div>
+                <div class="seient ocupat"></div>
+            </div>
+        </div>
+
+        <p>Has escollit <span id="seientsSeleccionats">0</span> seients per un total de <span id="total">0</span> USD</p>
+
+        <!-- Moneda i conversió -->
+        <label for="moneda">Moneda:</label>
+        <select id="moneda">
+            <!-- Opcions generades automàticament -->
+        </select>
+        
+        <p>Preu convertit: <span id="preuConvertit">0</span></p>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

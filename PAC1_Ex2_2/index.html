@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Tipus de Canvi</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="contenidor">
+        <h1>Calculadora de Tipus de Canvi</h1>
+
+        <!-- Formulari per seleccionar moneda base i destinació -->
+        <form id="formulariCanvi">
+            <div class="grup-formulari">
+                <label for="monedaBase">Moneda base:</label>
+                <select id="monedaBase">
+                    <!-- Opcions de moneda que es poden omplir amb API -->
+                </select>
+                <input type="number" id="import" placeholder="Import" min="0" required>
+            </div>
+
+            <div class="grup-formulari">
+                <label for="monedaDesti">Moneda destinació:</label>
+                <select id="monedaDesti">
+                    <!-- Opcions de moneda que es poden omplir amb API -->
+                </select>
+                <input type="text" id="resultat" placeholder="Resultat" readonly>
+            </div>
+
+            <button type="submit">Convertir</button>
+        </form>
+
+        <!-- Indicador d'estat de càrrega -->
+        <div id="carregant" style="display: none;">
+            <p>Carregant tipus de canvi...</p>
+        </div>
+
+        <!-- Missatge d'error -->
+        <div id="missatgeError" style="display: none; color: red;"></div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

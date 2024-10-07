@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ca">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Validador de Formularis</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <form id="formulariRegistre">
+        <h2>Registre d'usuari</h2>
+        <label for="nomUsuari">Nom d'usuari:</label>
+        <input type="text" id="nomUsuari" name="nomUsuari" required>
+        <span id="errorNomUsuari" class="error"></span>
+
+        <label for="correuElectronic">Correu electrònic:</label>
+        <input type="email" id="correuElectronic" name="correuElectronic" required>
+        <span id="errorCorreu" class="error"></span>
+
+        <label for="contrasenya">Contrasenya:</label>
+        <input type="password" id="contrasenya" name="contrasenya" required>
+        <span id="errorContrasenya" class="error"></span>
+
+        <label for="confirmaContrasenya">Confirmar contrasenya:</label>
+        <input type="password" id="confirmaContrasenya" name="confirmaContrasenya" required>
+        <span id="errorConfirmaContrasenya" class="error"></span>
+
+        <label for="edat">Edat:</label>
+        <input type="number" id="edat" name="edat" required>
+        <span id="errorEdat" class="error"></span>
+
+        <button type="submit">Registrar-se</button>
+    </form>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

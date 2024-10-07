@@ -1,0 +1,40 @@
+.contenidor {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.cinema-seients {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.fila {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px; /* Espai entre les files */
+}
+
+.seient {
+    width: 30px;
+    height: 30px;
+    background: #444;
+    margin: 3px;
+    cursor: pointer;
+}
+
+.seient.ocupat {
+    background: #ff4b5c;
+    pointer-events: none;
+}
+
+.seient.seleccionat {
+    background: #6feaf6;
+}
+
+p, select {
+    margin-top: 20px;
+}
