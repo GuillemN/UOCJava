@@ -25,10 +25,4 @@ findOne(users, { key: 'name', value: 'Carlos' }, { onSuccess, onError });
 console.log('findOne error');
 findOne(users, { key: 'name', value: 'Fermin' }, { onSuccess, onError });
 
-/*
-findOne success
-findOne error
- //wait 2 seconds
-user: Carlos
-ERROR: Element Not Found
-*/
+
