@@ -1,4 +1,4 @@
-// Funció findOne que retorna una promesa, no cal canviar res en aquesta part
+// Funció findOne que retorna una promesa
 const findOne = (list, { key, value }) => {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
@@ -8,10 +8,22 @@ const findOne = (list, { key, value }) => {
   });
 };
 
+
+const users = [
+  {
+    name: 'Carlos',
+    rol: 'Teacher'
+  },
+  {
+    name: 'Ana',
+    rol: 'Boss'
+  }
+];
+
 // Funció asíncrona per gestionar l'ús de findOne amb async/await
 const findUser = async () => {
   try {
-    // Utilitzem await per esperar a que la promesa de findOne es resolgui
+    // s'utilitza await per esperar a que la promesa de findOne es resolgui
     const user = await findOne(users, { key: 'name', value: 'Carlos' });
     // Si la promesa es resol, es mostra el nom de l'usuari trobat
     console.log(`user: ${user.name}`);
@@ -34,10 +46,8 @@ const findUserError = async () => {
   }
 };
 
-// Cridem la funció findUser que utilitza async/await
 console.log('findOne success');
 findUser(); // Crida a la funció findUser per gestionar la promesa
 
-// Cridem la funció findUserError per gestionar el cas d'error amb async/await
 console.log('findOne error');
 findUserError(); // Crida a la funció findUserError per gestionar l'error
