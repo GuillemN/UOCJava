@@ -1,29 +1,22 @@
-// Check to see if any of the elements in the
-// array are numbers greater than 10.
-
+//Es comprova si algun numero es superior a 10
 function anyGreaterThan10 (input) {
-  return input;
-};
+  return input.some(num => num > 10);
+}
 
-// Check to see if any of the strings in
-// the array is longer than 10 characters.
-
+//Es comprova si alguna paraula té més de 10 lletres
 function longWord (input) {
-  return input;
+  return input.some(word => word.length > 10);
 };
 
-// Check to see if any of the elements in
-// the matrix are true.
-
+//Es mira si hi ha algun True al array
 function truePossibilities (input) {
-  return input;
+  return input.some(row => row.some(value => value === true));
+
 };
 
-// Check to see if 'Lost' is in
-// the phrase (using some).
-
+//Es comprova si hi ha la paraula Lost a la frase
 function lostCarcosa (input) {
-  return input;
+  return input.some(line => line.includes('Lost'));
 };
 
 module.exports = {
