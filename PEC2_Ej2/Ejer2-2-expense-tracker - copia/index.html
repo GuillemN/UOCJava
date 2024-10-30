@@ -12,9 +12,11 @@
       <h2>Expense Tracker</h2>
 
       <div class="container">
+        <!-- Balance Display -->
         <h4>Your Balance</h4>
         <h1 id="balance">$0.00</h1>
 
+        <!-- Income and Expense Summary -->
         <div class="inc-exp-container">
           <div>
             <h4>Income</h4>
@@ -26,9 +28,11 @@
           </div>
         </div>
 
+        <!-- Transaction History -->
         <h3>History</h3>
         <ul id="list" class="list"></ul>
 
+        <!-- Add New Transaction Form -->
         <h3>Add New Transaction</h3>
         <form id="form">
           <div class="form-control">
@@ -46,6 +50,7 @@
       </div>
     </div>
 
+    <!-- Loading the app script as the entry point for MVC -->
     <script type="module" src="app.js"></script>
   </body>
 </html>
